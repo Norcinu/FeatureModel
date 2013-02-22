@@ -20,12 +20,18 @@ void WriteLogFile(const int win) {
 
 int ExecuteCrabFeature(const int count, int position) {	
 	int win = 0;
-	if (count == 3)
+	if (count == 3) {
+		featureLogCode = 13;
 		win = 3000;
-	else if (count == 4)
+	}
+	else if (count == 4) {
+		featureLogCode = 14;
 		win = 4000;
-	else if (count == 5)
+	}
+	else if (count == 5) {
+		featureLogCode = 15;
 		win = 5000;
+	}
 
 	return win;
 }
@@ -108,3 +114,21 @@ int ExecuteStarfishFeature(const int count) {
 	return FreeSpinsTotalWin;
 }
 
+int ExecuteShellFeature(const int count) {
+	if (count == 3) {
+		DbFeatureLogging = 53;
+	}
+	else if (count == 4) {
+		DbFeatureLogging = 54;
+	}
+	else
+		DbFeatureLogging = 55;
+	
+	
+	int	PresentWinValues[5] = {0};
+	int ShellWinValues[] = {10000, 10000, 9000, 8500, 8000, 7000, 6500, 6000, 5500, 5000, 4000, 4000, 3800, 
+3600, 3400, 3200, 3000, 2800, 2600, 2400, 2200, 2000, 1800, 1600, 1500, 1200, 1000, 800, 600, 500, 400};
+	for (int i = 0; i < 5; i++) {
+		PresentWinValues[i] = ShellWinValues[GetLocalIntRandomNumber(29)]; 
+	}
+}
