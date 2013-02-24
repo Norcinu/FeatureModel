@@ -1,0 +1,24 @@
+puffer 3 : [Average: 50]
+
+puffer 4 : [Average: 67]
+
+puffer 5 : [Average: 84]
+
+Starfish 3 : [Average: 23]
+
+Starfish 4 : [Average: 33]
+
+Starfish 5 : [Average: 50]
+
+Wonga 3 : [Average: 15]
+
+Wonga 4 : [Average: 30]
+
+Wonga 5 : [Average: 85]
+
+Shell 3 : [Average: 41]
+
+Shell 4 : [Average: 41]
+
+Shell 5 : [Average: 41]
+
